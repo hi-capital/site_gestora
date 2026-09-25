@@ -402,7 +402,7 @@
     <div class="container">
       <div class="about-grid">
         <div class="about-label reveal">
-          <span class="sec-num">01 —</span>
+          <span class="sec-num"></span>
           <span class="eyebrow" data-i18n="hero.eyebrow">Transparência & Compliance</span>
         </div>
         <div class="reveal">
@@ -418,7 +418,7 @@
     <div class="container">
       <div class="docs-head">
         <div class="reveal" style="display:flex;flex-direction:column;gap:20px">
-          <span class="sec-num">02 —</span>
+          <span class="sec-num"></span>
           <span class="eyebrow" data-i18n="docs.eyebrow">Documentos Regulatórios</span>
         </div>
         <div class="reveal">
@@ -435,7 +435,7 @@
     <div class="container">
       <div class="contact-grid">
         <div class="reveal" style="display:flex;flex-direction:column;gap:20px">
-          <span class="sec-num">03 —</span>
+          <span class="sec-num"></span>
           <span class="eyebrow" data-i18n="contact.eyebrow">Contato de Compliance</span>
         </div>
         <div class="reveal">
@@ -447,7 +447,7 @@
             </div>
             <div class="contact-card">
               <div class="k" data-i18n="contact.address">Endereço</div>
-              <div class="v" data-i18n="contact.addr">Curitiba, PR — Brasil</div>
+              <div class="v" data-i18n="contact.addr">Curitiba, Paraná — Brasil</div>
             </div>
           </div>
         </div>
@@ -479,7 +479,7 @@
 /* ================== i18n ================== */
 const I18N = {
   pt: {
-    "brand.sub":"Gestão de Recursos",
+    "brand.sub":"GESTÃO DE RECURSOS",
     "hero.eyebrow":"Transparência & Compliance",
     "hero.title":"Documentos e <em>políticas</em> da gestora.",
     "hero.lead":"Visando atender à regulamentação em vigor e dar maior transparência, disponibilizamos abaixo as políticas e documentos formais da Honey Island Gestão de Recursos.",
@@ -499,7 +499,7 @@ const I18N = {
     "contact.title":"Fale com nosso <em>Compliance</em>.",
     "contact.email":"E-mail",
     "contact.address":"Endereço",
-    "contact.addr":"Curitiba, PR — Brasil",
+    "contact.addr":"Curitiba, Paraná — Brasil",
 
     "disclaimer.label":"Aviso Regulatório",
     "footer.copy":"© 2026 Honey Island Gestão de Recursos Ltda.",
@@ -507,27 +507,27 @@ const I18N = {
     "doc.meta":"PDF · Documento"
   },
   en: {
-    "brand.sub":"Asset Management",
+    "brand.sub":"ASSET MANAGEMENT",
     "hero.eyebrow":"Transparency & Compliance",
-    "hero.title":"<em>Policies</em> and documents of the firm.",
-    "hero.lead":"In order to comply with current regulation and provide greater transparency, we make available below the formal policies and documents of Honey Island Asset Management.",
+    "hero.title":"Our <em>policies</em> and documents.",
+    "hero.lead":"To comply with applicable regulations and promote greater transparency, the formal policies and documents of Honey Island Gestão de Recursos Ltda. are available below.",
     "hero.city":"Curitiba",
     "hero.country":"Brazil",
-    "hero.disclaimer":"Honey Island Gestão de Recursos Ltda. is currently undergoing accreditation with the Brazilian Securities and Exchange Commission (\"CVM\") under the \u201casset manager\u201d category, and is also in the process of adhering to the Brazilian Financial and Capital Markets Association (\u201cANBIMA\u201d) with respect to certain Association Codes.",
+    "hero.disclaimer":"Honey Island Gestão de Recursos Ltda. is still in the process of registration with the Brazilian Securities and Exchange Commission (\"CVM\") as an \"asset manager\", and is also in the process of adhering to certain Codes of the Brazilian Financial and Capital Markets Association (\"ANBIMA\").",
 
     "about.eyebrow":"About the Firm",
-    "about.title":"The <em>Venture Capital</em> firm investing in the next winners of financial services.",
-    "about.lead":"We are the Venture Capital firm investing in the next winners of financial services in Latin America and building alongside them before they become obvious. Asymmetry born from the combination of expert screening and hands-on guidance.",
+    "about.title":"The <em>Venture Capital</em> firm backing the next winners in financial services.",
+    "about.lead":"We are the Venture Capital firm investing in Latin American financial services, and building alongside them before they become obvious. Our edge comes from combining expert screening with hands-on guidance.",
 
     "docs.eyebrow":"Regulatory Documents",
-    "docs.title":"Available policies <em>and documents</em>.",
+    "docs.title":"<em>Available</em> policies and documents.",
     "docs.intro":"Formal firm policies and documents, publicly available in compliance with CVM regulations.",
 
     "contact.eyebrow":"Compliance Contact",
-    "contact.title":"Get in touch with our <em>Compliance</em>.",
+    "contact.title":"Get in touch with our <em>Compliance</em> team.",
     "contact.email":"Email",
     "contact.address":"Address",
-    "contact.addr":"Curitiba, PR — Brazil",
+    "contact.addr":"Curitiba, Paraná — Brazil",
 
     "disclaimer.label":"Regulatory Notice",
     "footer.copy":"© 2026 Honey Island Gestão de Recursos Ltda.",
@@ -537,11 +537,11 @@ const I18N = {
 };
 
 const DOCS = [
-  { id:"investimentos-pessoais", pt:"Política de Investimentos Pessoais",             en:"Personal Investments Policy" },
-  { id:"rateio-ordens",          pt:"Política de Rateio e Divisão de Ordens",          en:"Order Allocation & Split Policy" },
+  { id:"investimentos-pessoais", pt:"Política de Investimentos Pessoais",             en:"Personal Trading Policy" },
+  { id:"rateio-ordens",          pt:"Política de Rateio e Divisão de Ordens",          en:"Trade Allocation & Apportionment Policy" },
   { id:"codigo-etica",           pt:"Código de Ética",                                 en:"Code of Ethics" },
-  { id:"manual-rpci",            pt:"Manual de Regras, Procedimentos e Controles Internos", en:"Rules, Procedures & Internal Controls Manual" },
-  { id:"politica-voto",          pt:"Política de Voto",                                en:"Voting Policy" },
+  { id:"manual-rpci",            pt:"Manual de Regras, Procedimentos e Controles Internos", en:"Manual of Rules, Procedures and Internal Controls" },
+  { id:"politica-voto",          pt:"Política de Voto",                                en:"Proxy Voting Policy" },
   { id:"gestao-riscos",          pt:"Política de Gestão de Riscos",                    en:"Risk Management Policy" },
   { id:"formulario-referencia",  pt:"Formulário de Referência",                        en:"Reference Form" }
 ];

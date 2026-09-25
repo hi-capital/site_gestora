@@ -41,7 +41,9 @@ Página single-scroll. Ordem vertical (top → bottom):
 - **Posição**: `position: fixed; top: 0; left: 0; right: 0; z-index: 50`
 - **Altura**: ~78px com padding `22px 44px`
 - **Comportamento adaptativo (chave)**: JS observa scroll; enquanto `.hero` visível → `on-navy` (fundo escuro, logo branco); senão → `on-cream` (fundo claro, logo preto). Transição CSS `.4s`.
-- **Esquerda**: logo (branco ou preto, 28px altura) + divisor 1px + tag "GESTÃO DE RECURSOS" / "ASSET MANAGEMENT" (Roboto 500, 10px, .36em uppercase, opacity .7)
+- **Esquerda**: logo (branco ou preto, 28px altura) + divisor 1px + tag `brand.sub` (Roboto 500, 10px, .36em uppercase, opacity .7)
+  - **PT**: "GESTÃO DE RECURSOS"
+  - **EN**: "ASSET MANAGEMENT"
 - **Direita**: language toggle `PT / EN` (Roboto 500, 11px, .28em uppercase). Ativo `opacity: 1`, inativo `opacity: .4`.
 
 ### 01 — Hero (Sobre a Gestora)
@@ -65,7 +67,7 @@ Coluna esquerda (o item "reveal"):
   - **Protótipo atual (inline)**: `font-size: 67.108px`
   - `max-width: 16ch` no CSS base
   - **PT**: `O <em>Venture Capital</em> que investe nos próximos vencedores dos serviços financeiros.`
-  - **EN**: `The <em>Venture Capital</em> firm investing in the next winners of financial services.`
+  - **EN**: `The <em>Venture Capital</em> firm backing the next winners in financial services.`
   - Palavra em `<em>` → itálico DM Serif + cor `#cfe7f7` (hex-glow)
 
 Coluna direita (`.hero-side`):
@@ -73,7 +75,7 @@ Coluna direita (`.hero-side`):
   - Work Sans 400, 16px, line-height 1.7, cor `rgba(242,238,234,.72)`, max-width 440px
   - **Protótipo atual (inline)**: `height: 380.938px` — cria bloco alto para empurrar visualmente o alinhamento com o título grande da esquerda. Em produção, substituir por flex/grid alignment natural.
   - **PT**: "Somos o Venture Capital que investe nos próximos vencedores dos serviços financeiros na América Latina e constrói com eles, antes que se tornem óbvios. Assimetria que nasce da combinação entre a expertise de triar e o acompanhamento que dá norte."
-  - **EN**: "We are the Venture Capital firm investing in the next winners of financial services in Latin America and building alongside them before they become obvious. Asymmetry born from the combination of expert screening and hands-on guidance."
+  - **EN**: "We are the Venture Capital firm investing in Latin American financial services, and building alongside them before they become obvious. Our edge comes from combining expert screening with hands-on guidance."
 
 **Hero-bottom** — Localização e ano
 - CSS base: `padding-top: 60px, margin-top: 60px, border-top: 1px rgba(242,238,234,.22)`, flex space-between align-items flex-end
@@ -128,11 +130,11 @@ Para referência exata do que está no HTML entregue:
   - **DM Serif Display 400**, `clamp(40px, 5vw, 76px)`, line-height 1.05, letter-spacing -.015em, cor `#595959`
   - "políticas" em `<em>` → itálico + cor `#3e6788` (navy-700)
   - **PT**: `Documentos e <em>políticas</em> da gestora.`
-  - **EN**: `<em>Policies</em> and documents of the firm.`
+  - **EN**: `Our <em>policies</em> and documents.`
 - Lead abaixo (margin-top 40px):
   - Work Sans 400, 17px, line-height 1.75, cor `#595959`, max-width 720px
   - **PT**: "Visando atender à regulamentação em vigor e dar maior transparência, disponibilizamos abaixo as políticas e documentos formais da Honey Island Gestão de Recursos."
-  - **EN**: "In order to comply with current regulation and provide greater transparency, we make available below the formal policies and documents of Honey Island Asset Management."
+  - **EN**: "To comply with applicable regulations and promote greater transparency, the formal policies and documents of Honey Island Gestão de Recursos Ltda. are available below."
 
 ### 03 — Documentos Regulatórios
 
@@ -146,7 +148,7 @@ Para referência exata do que está no HTML entregue:
 **Head — coluna direita**:
 - H2 (DM Serif 400, `clamp(40px, 4.6vw, 68px)`, line-height 1.02, letter-spacing -.015em, cor `#595959`)
   - **PT**: `Políticas e documentos <em>disponíveis</em>.`
-  - **EN**: `Available policies <em>and documents</em>.`
+  - **EN**: `<em>Available</em> policies and documents.`
 - Intro (Work Sans 400, 15px, line-height 1.7, cor `rgba(89,89,89,.72)`, max-width 520px)
   - **PT**: "Documentos e políticas formais da gestora, disponíveis para consulta pública em conformidade com as normas da CVM."
   - **EN**: "Formal firm policies and documents, publicly available in compliance with CVM regulations."
@@ -155,11 +157,11 @@ Para referência exata do que está no HTML entregue:
 
 | # | PT | EN | id (slug) |
 |---|----|----|-----------|
-| 01 | Política de Investimentos Pessoais | Personal Investments Policy | `investimentos-pessoais` |
-| 02 | Política de Rateio e Divisão de Ordens | Order Allocation & Split Policy | `rateio-ordens` |
+| 01 | Política de Investimentos Pessoais | Personal Trading Policy | `investimentos-pessoais` |
+| 02 | Política de Rateio e Divisão de Ordens | Trade Allocation & Apportionment Policy | `rateio-ordens` |
 | 03 | Código de Ética | Code of Ethics | `codigo-etica` |
-| 04 | Manual de Regras, Procedimentos e Controles Internos | Rules, Procedures & Internal Controls Manual | `manual-rpci` |
-| 05 | Política de Voto | Voting Policy | `politica-voto` |
+| 04 | Manual de Regras, Procedimentos e Controles Internos | Manual of Rules, Procedures and Internal Controls | `manual-rpci` |
+| 05 | Política de Voto | Proxy Voting Policy | `politica-voto` |
 | 06 | Política de Gestão de Riscos | Risk Management Policy | `gestao-riscos` |
 | 07 | Formulário de Referência | Reference Form | `formulario-referencia` |
 
@@ -192,11 +194,13 @@ Para referência exata do que está no HTML entregue:
 **Coluna direita**
 - H2 (DM Serif 400, `clamp(36px, 4.4vw, 64px)`)
   - **PT**: `Fale com nosso <em>Compliance</em>.`
-  - **EN**: `Get in touch with our <em>Compliance</em>.`
+  - **EN**: `Get in touch with our <em>Compliance</em> team.`
   - "Compliance" em itálico + cor navy-700
 - Cards grid 2 colunas, gap 40px, max-width 720px
   - **Card E-mail**: label + `compliance@hi.capital` (mailto, hover navy-700)
-  - **Card Endereço**: label + "Curitiba, PR — Brasil"
+  - **Card Endereço**:
+    - **PT**: label "ENDEREÇO" + "Curitiba, Paraná — Brasil"
+    - **EN**: label "ADDRESS" + "Curitiba, Paraná — Brazil"
 - Cada card: border-top hairline, padding `24px 0`, label Roboto 500 10.5px, valor DM Serif 400 24px
 
 ### 05 — Aviso Regulatório (disclaimer band)
@@ -210,7 +214,9 @@ Para referência exata do que está no HTML entregue:
 > A Honey Island Gestão de Recursos Ltda. ainda está em fase de credenciamento perante a Comissão de Valores Mobiliários ("CVM") na categoria "gestor de recursos", bem como está em processo de adesão perante a Associação Brasileira das Entidades dos Mercados Financeiro e de Capitais ("ANBIMA"), em relação a determinados Códigos da Associação.
 
 **Copy EN:**
-> Honey Island Gestão de Recursos Ltda. is currently undergoing accreditation with the Brazilian Securities and Exchange Commission ("CVM") under the "asset manager" category, and is also in the process of adhering to the Brazilian Financial and Capital Markets Association ("ANBIMA") with respect to certain Association Codes.
+> Honey Island Gestão de Recursos Ltda. is still in the process of registration with the Brazilian Securities and Exchange Commission ("CVM") as an "asset manager", and is also in the process of adhering to certain Codes of the Brazilian Financial and Capital Markets Association ("ANBIMA").
+
+**Nota tipográfica**: usar aspas retas ASCII (`"`) em ambos os idiomas, não aspas curvas (“ ”), para consistência visual com "CVM" e "ANBIMA".
 
 ### 06 — Footer
 
